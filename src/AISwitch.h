@@ -16,11 +16,7 @@ void train_model() {
       error += pow(y[i] - (a * x[i] + b), 2);
     }
     error /= N;
-    Serial.print("Error: ");
-    Serial.println(error);
-    Serial.print("a: ");
-    Serial.println(a);
-    Serial.print("b: ");
+    Serial.print("Generating Output ... ");
     Serial.println(b);
     if (error < 0.01) {
       break;
@@ -33,8 +29,8 @@ void train_model() {
     }
     da /= N;
     db /= N;
-    a = a - alpha * da; // Update a
-    b = b - alpha * db; // Update b
+    a = a - alpha * da;
+    b = b - alpha * db;
   }
 }
 
@@ -50,7 +46,7 @@ void loop() {
   }
   float x_new = Serial.parseFloat();
   float y_new = predict(x_new);
-  Serial.print("The predicted output value is: ");
+  Serial.print("Output: ");
   Serial.println(y_new);
   while (Serial.available() > 0) {
     Serial.read();
