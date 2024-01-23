@@ -18,7 +18,7 @@ void train_model() {
     error /= N;
     Serial.print("Generating Output ... ");
     Serial.println(b);
-    if (error < 0.001) {
+    if (error < 0.1) {
       break;
     }
     float da = 0;
