@@ -1,19 +1,10 @@
-// Define the number of data points
 #define N 10
-
-// Define the input and output data arrays
+#define BAUD_RATE 9600
 float x[N] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Input values
 float y[N] = {2, 4, 5, 7, 9, 11, 12, 15, 16, 18}; // Output values
-
-// Define the model parameters
-float a = 0; // Slope of the line
-float b = 0; // Intercept of the line
-
-// Define the learning rate
+float a = 0;
+float b = 0;
 float alpha = 0.01;
-
-// Define the serial baud rate
-#define BAUD_RATE 9600
 
 // Initialize the serial communication
 void setup() {
