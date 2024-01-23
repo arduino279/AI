@@ -40,7 +40,7 @@ float predict(float x) {
 
 void loop() {
   train_model();
-  Serial.print("Enter a new input value: ");
+  Serial.print("Input: ");
   while (Serial.available() == 0) {
     
   }
