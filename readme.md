@@ -6,11 +6,11 @@
 
 ### Import
 
-1. Look up `<Name>` in the Library Manager and install the latest version
+1. Look up `AISwitch` in the Library Manager and install the latest version
 2. Insert the following snippet
  
 ```ino
-#include <example.h>
+#include AISwitch.h
 ```
 
 ### Setup
