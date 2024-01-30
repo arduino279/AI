@@ -1,0 +1,10 @@
+cc_library(
+    name = "AISwitch",
+    srcs = [
+        "src/AISwitch.h"
+    ],
+    includes = [
+        "src",
+    ],
+    visibility = ["//visibility:public"],
+)
