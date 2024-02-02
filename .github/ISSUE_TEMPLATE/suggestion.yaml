@@ -1,0 +1,12 @@
+name: 🐞 Suggestion
+description: Suggest something
+title: "Suggestion 🍭 "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    attributes:
+      label: Suggestion
+      description: Explain your suggestion
+      placeholder: Suggestion
+    validations:
+      required: true
