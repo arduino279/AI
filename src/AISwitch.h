@@ -5,6 +5,7 @@ class AISwitch {
       float a;
       float b;
       float alpha;
+      int train_model();
 };
 
 #define N 30
