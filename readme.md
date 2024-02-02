@@ -16,7 +16,7 @@
 ### Setup
 
 ```ino
-<Setup>
+class AISwitch = { float x[n], float y[n], float a, float b}
 ```
 **Parameters**
 
