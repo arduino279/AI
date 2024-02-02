@@ -22,6 +22,7 @@ class AISwitch = { float x[n], float y[n], float a, float b, float alpha }
 
 * `float x` First number set
 * `float y` Second number set
+* `float a` 
 
 **Example**
 
