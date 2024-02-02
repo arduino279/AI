@@ -18,7 +18,7 @@ void setup() {
   Serial.begin(9600);
 }
 
-void train_model() {
+int train_model() {
   while (true) {
     float error = 0;
     for (int i = 0; i < N; i++) {
@@ -29,6 +29,9 @@ void train_model() {
     Serial.println(b);
     if (error < 0.1) {
       break;
+      return true;
+    } else {
+      return false;
     }
     float da = 0;
     float db = 0;
