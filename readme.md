@@ -20,7 +20,8 @@ class AISwitch = { float x[n], float y[n], float a, float b, float alpha }
 ```
 **Parameters**
 
-* `i` Index
+* `float x` First number set
+* `float y` Second number set
 
 **Example**
 
